@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhost.eu.org – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2a52be;
+      --accent: #00bcd4;
+      --bg: #111623;
+      --white: #fff;
+      --gray: #bbb;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(120deg, var(--primary) 0%, var(--accent) 100%);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(17, 22, 35, 0.95);
+      border-radius: 24px;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.3);
+      max-width: 370px;
+      width: 98vw;
+      text-align: center;
+      padding: 48px 28px 36px 28px;
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(18px);}
+      to { opacity: 1;}
+    }
+    .logo-circle {
+      background: linear-gradient(140deg, var(--accent), var(--primary));
+      border-radius: 50%;
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 18px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 18px 6px rgba(0,188,212,0.15);
+    }
+    .logo-circle span {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 2.25rem;
+      margin: 0 0 12px 0;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 1.08rem;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .feature {
+      display: flex;
+      align-items: center;
+      font-size: 1.01rem;
+      color: var(--white);
+      padding: 6px 0;
+    }
+    .feature-icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+      color: var(--accent);
+      min-width: 24px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+    .email-badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      background: var(--accent);
+      color: var(--bg);
+      border-radius: 22px;
+      padding: 6px 18px;
+      font-weight: 500;
+      font-size: 1.03em;
+      box-shadow: 0 1px 8px rgba(0,188,212,0.24);
+      letter-spacing: .5px;
+    }
+    .notify-form {
+      margin: 18px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .notify-input {
+      padding: 8px 12px;
+      font-size: 1em;
+      border-radius: 18px;
+      border: none;
+      outline: none;
+      background: #e8eaf6;
+      color: var(--bg);
+      width: 140px;
+    }
+    .notify-btn {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 18px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .14s;
+    }
+    .notify-btn:hover,
+    .notify-btn:focus {
+      background: var(--accent);
+    }
+    @media (max-width: 450px) {
+      .container {
+        padding: 36px 7vw 24px 7vw;
+        max-width: none;
+      }
+      h1 { font-size: 1.48rem; }
+      .logo-circle { width: 65px; height: 65px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-circle"><span>SH</span></div>
+    <h1>Superhost.eu.org</h1>
+    <div class="subtitle">We're building something amazing.<br>Stay tuned!</div>
+    <div class="email-badge">hello@superhost.eu.org</div>
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">✨</span> Lightning-fast & secure infrastructure
+      </div>
+      <div class="feature">
+        <span class="feature-icon">📈</span> Modern, scalable hosting platform
+      </div>
+      <div class="feature">
+        <span class="feature-icon">💡</span> Advanced features & sleek design
+      </div>
+      <div class="feature">
+        <span class="feature-icon">💬</span> Custom email for direct contact
+      </div>
+    </div>
+    <form class="notify-form" autocomplete="off">
+      <input
+        class="notify-input"
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+      >
+      <button class="notify-btn" type="submit">Notify Me</button>
+    </form>
+    <div style="color:#aaa; font-size:0.95em; margin-top:20px;">
+      <!-- Optional animated dots effect -->
+      <span id="dots">Launching</span>
+    </div>
+  </div>
+  <script>
+    // Animate "Launching..." dots
+    let dots = document.getElementById('dots'), i = 0;
+    setInterval(() => {
+      dots.textContent = "Launching" + '.'.repeat((i++ % 3)+1);
+    }, 600);
+
+    // Prevent actual form submission
+    document.querySelector('.notify-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thanks! You\'ll be the first to know.');
+    });
+  </script>
+</body>
+</html>
