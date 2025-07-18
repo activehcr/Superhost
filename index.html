@@ -1,191 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Superhost.eu.org – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700,400&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #2a52be;
-      --accent: #00bcd4;
-      --bg: #111623;
-      --white: #fff;
-      --gray: #bbb;
-    }
-    html, body {
-      height: 100%;
-    }
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(120deg, var(--primary) 0%, var(--accent) 100%);
-      color: var(--white);
       min-height: 100vh;
+      background: linear-gradient(135deg, #111 55%, #19398a 100%);
+      font-family: 'Poppins', sans-serif;
+      color: #faffff;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .container {
-      background: rgba(17, 22, 35, 0.95);
-      border-radius: 24px;
-      box-shadow: 0 8px 48px rgba(0,0,0,0.3);
-      max-width: 370px;
-      width: 98vw;
+    .glass {
+      background: rgba(30, 43, 78, 0.8);
+      border-radius: 30px;
+      padding: 45px 38px;
+      box-shadow: 0 4px 40px 12px rgba(20,41,87,.33);
+      max-width: 380px;
+      width: 95vw;
+      position: relative;
       text-align: center;
-      padding: 48px 28px 36px 28px;
-      animation: fadeIn 1s;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(18px);}
-      to { opacity: 1;}
-    }
-    .logo-circle {
-      background: linear-gradient(140deg, var(--accent), var(--primary));
-      border-radius: 50%;
-      width: 78px;
-      height: 78px;
-      margin: 0 auto 18px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 18px 6px rgba(0,188,212,0.15);
-    }
-    .logo-circle span {
-      font-size: 2.2rem;
+    .glass:hover { box-shadow: 0 8px 80px 14px rgba(20,41,87,.45);}
+    .page-logo {
+      background: linear-gradient(90deg,#21c08b,#3a83ff 93%);
       font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 2.5em;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 17px auto;
+      border-radius: 16px 38px 16px 38px/38px 16px 38px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+      color: #fff;
+      box-shadow: 0 1px 10px #3a83ff33;
     }
     h1 {
-      font-size: 2.25rem;
-      margin: 0 0 12px 0;
-      letter-spacing: 1px;
+      margin-top: 0;
+      font-size: 2.1rem;
+      letter-spacing: 1.5px;
     }
-    .subtitle {
-      font-size: 1.08rem;
-      color: var(--gray);
-      margin-bottom: 24px;
+    .coming {
+      font-size: 1.18rem;
+      color: #a9b4c0;
+      margin: 9px 0 29px 0;
+      letter-spacing: 0.2px;
     }
-    .features {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-bottom: 28px;
+    .info {
+      color: #e2f2fe;
+      margin-bottom: 19px;
+      font-size: 1rem;
     }
-    .feature {
-      display: flex;
-      align-items: center;
-      font-size: 1.01rem;
-      color: var(--white);
-      padding: 6px 0;
-    }
-    .feature-icon {
-      margin-right: 10px;
-      font-size: 1.2em;
-      color: var(--accent);
-      min-width: 24px;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    }
-    .email-badge {
-      display: inline-block;
-      margin-bottom: 16px;
-      background: var(--accent);
-      color: var(--bg);
+    .custom-email {
+      background: linear-gradient(90deg,#3a83ff,#21c08b 80%);
+      padding: 7px 14px;
       border-radius: 22px;
-      padding: 6px 18px;
-      font-weight: 500;
-      font-size: 1.03em;
-      box-shadow: 0 1px 8px rgba(0,188,212,0.24);
-      letter-spacing: .5px;
-    }
-    .notify-form {
-      margin: 18px 0 0 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-    }
-    .notify-input {
-      padding: 8px 12px;
+      color: #18304b;
+      font-weight: 600;
+      display: inline-block;
       font-size: 1em;
-      border-radius: 18px;
+      margin-bottom: 24px;
+      letter-spacing: .3px;
+      box-shadow: 0 2px 10px #21c08b33;
+    }
+    form {
+      margin: 28px 0 0 0;
+      display: flex;
+      gap: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .mail-inp {
+      border-radius: 20px 0 0 20px;
+      padding: 9px 15px;
+      font-size: 1em;
       border: none;
       outline: none;
-      background: #e8eaf6;
-      color: var(--bg);
-      width: 140px;
+      width: 145px;
+      background: #e5e9f7;
+      color: #223344;
+      transition: background .1s;
     }
-    .notify-btn {
-      padding: 8px 20px;
+    .mail-inp:focus { background: #fcfdff;}
+    .mail-btn {
       border: none;
-      border-radius: 18px;
-      background: var(--primary);
-      color: var(--white);
-      font-weight: 600;
+      padding: 9px 22px;
+      border-radius: 0 20px 20px 0;
+      background: linear-gradient(90deg,#21c08b,#3a83ff 93%);
+      color: #fff;
+      font-weight: 700;
       cursor: pointer;
-      transition: background .14s;
+      transition: background 0.18s, color 0.18s;
+      font-size: 1em;
     }
-    .notify-btn:hover,
-    .notify-btn:focus {
-      background: var(--accent);
+    .mail-btn:hover, .mail-btn:focus {
+      background: linear-gradient(90deg,#3a83ff,#21c08b 80%);
+      color: #18304b;
     }
-    @media (max-width: 450px) {
-      .container {
-        padding: 36px 7vw 24px 7vw;
-        max-width: none;
-      }
-      h1 { font-size: 1.48rem; }
-      .logo-circle { width: 65px; height: 65px;}
+    .features {
+      margin: 36px 0 0 0;
+      text-align: left;
+    }
+    .features li {
+      padding: 5px 0;
+      font-size: 1.06em;
+      opacity: .83;
+      list-style: none;
+      position: relative;
+      margin-left: 0;
+    }
+    .features li:before {
+      content: '⦿';
+      color: #21c08b;
+      font-size: .72em;
+      margin-right: 7px;
+      vertical-align: middle;
+    }
+    .socials {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 21px;
+    }
+    .socials a {
+      color: #3a83ff;
+      font-size: 1.3em;
+      text-decoration: none;
+      transition: color 0.16s;
+    }
+    .socials a:hover { color: #21c08b;}
+    .glow {
+      position: absolute;
+      top: -80px;
+      left: 45%;
+      width: 190px;
+      height: 140px;
+      background: radial-gradient(ellipse at center, #3a83ff44 0%, transparent 80%);
+      z-index: -1;
+      filter: blur(8px);
+      transform: translateX(-50%);
+      pointer-events: none;
+      animation: pulse 4s infinite cubic-bezier(.85,0,.65,1);
+    }
+    @keyframes pulse {
+      0%,100% { opacity:.92; }
+      50% { opacity:.57;}
+    }
+    @media (max-width:500px){
+      .glass{ padding: 26px 5vw;}
+      h1{ font-size:1.35em;}
+      .features{font-size:0.94em;}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo-circle"><span>SH</span></div>
+  <div class="glass">
+    <div class="glow"></div>
+    <div class="page-logo">SH</div>
     <h1>Superhost.eu.org</h1>
-    <div class="subtitle">We're building something amazing.<br>Stay tuned!</div>
-    <div class="email-badge">hello@superhost.eu.org</div>
-    <div class="features">
-      <div class="feature">
-        <span class="feature-icon">✨</span> Lightning-fast & secure infrastructure
-      </div>
-      <div class="feature">
-        <span class="feature-icon">📈</span> Modern, scalable hosting platform
-      </div>
-      <div class="feature">
-        <span class="feature-icon">💡</span> Advanced features & sleek design
-      </div>
-      <div class="feature">
-        <span class="feature-icon">💬</span> Custom email for direct contact
-      </div>
+    <div class="coming">A new hosting wave is coming soon.<br>
+      <span style="font-size:0.88em; color:#5ce0b6;">Prepare for launch!</span>
     </div>
-    <form class="notify-form" autocomplete="off">
-      <input
-        class="notify-input"
-        type="email"
-        name="email"
-        placeholder="Your email"
-        required
-      >
-      <button class="notify-btn" type="submit">Notify Me</button>
+    <div class="info">We’re working hard to deliver a sleek experience. Want to join early? Sign up below!</div>
+    <span class="custom-email">hello@superhost.eu.org</span>
+    <form autocomplete="off">
+      <input class="mail-inp" type="email" placeholder="Your Email" required>
+      <button class="mail-btn" type="submit">Notify Me</button>
     </form>
-    <div style="color:#aaa; font-size:0.95em; margin-top:20px;">
-      <!-- Optional animated dots effect -->
-      <span id="dots">Launching</span>
+    <ul class="features">
+      <li>Ultra-high performance—built for speed</li>
+      <li>Enterprise-grade security at every layer</li>
+      <li>Custom email & easy contact</li>
+      <li>Modern dashboard, blazing-fast deploys</li>
+      <li>Mobile-first, fully responsive UI</li>
+    </ul>
+    <div class="socials">
+      <a href="#"><span title="Twitter">🐦</span></a>
+      <a href="#"><span title="GitHub">💻</span></a>
+      <a href="#"><span title="Mail">✉️</span></a>
     </div>
   </div>
   <script>
-    // Animate "Launching..." dots
-    let dots = document.getElementById('dots'), i = 0;
-    setInterval(() => {
-      dots.textContent = "Launching" + '.'.repeat((i++ % 3)+1);
-    }, 600);
-
-    // Prevent actual form submission
-    document.querySelector('.notify-form').addEventListener('submit', function(e) {
+    document.querySelector('form').addEventListener('submit', e => {
       e.preventDefault();
-      alert('Thanks! You\'ll be the first to know.');
+      alert("Thank you! You’ll be notified at launch.");
     });
   </script>
 </body>
