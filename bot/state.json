@@ -1,0 +1,13 @@
+{
+  "marketIndex": 0,
+  "symbol": "ETH",
+  "direction": "long",
+  "gridType": "arithmetic",
+  "lowerPrice": 2470,
+  "upperPrice": 2520,
+  "grids": 50,
+  "quantityPerGrid": 5,
+  "buyWorstPrice": 260000,
+  "sellWorstPrice": 220000,
+  "priceLogSeconds": 1
+}
