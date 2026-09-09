@@ -7,7 +7,7 @@
   "upperPrice": 106,
   "grids": 100,
   "quantityPerGrid": 10,
-  "buyWorstPrice": 11000,
-  "sellWorstPrice": 8500,
+  "buyWorstPrice": 110000,
+  "sellWorstPrice": 85000,
   "priceLogSeconds": 1
 }
