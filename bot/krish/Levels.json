@@ -1,0 +1,13 @@
+{
+  "marketIndex": 2,
+  "symbol": "SOL",
+  "direction": "long",
+  "gridType": "arithmetic",
+  "lowerPrice": 66,
+  "upperPrice": 106,
+  "grids": 200,
+  "quantityPerGrid": 10,
+  "buyWorstPrice": 110000,
+  "sellWorstPrice": 85000,
+  "priceLogSeconds": 1
+}

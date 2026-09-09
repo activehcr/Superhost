@@ -3,10 +3,10 @@
   "symbol": "ETH",
   "direction": "long",
   "gridType": "arithmetic",
-  "lowerPrice": 2470,
+  "lowerPrice": 2220,
   "upperPrice": 2520,
-  "grids": 50,
-  "quantityPerGrid": 5,
+  "grids": 100,
+  "quantityPerGrid": 10,
   "buyWorstPrice": 260000,
   "sellWorstPrice": 220000,
   "priceLogSeconds": 1
