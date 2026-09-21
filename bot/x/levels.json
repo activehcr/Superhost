@@ -4,7 +4,7 @@
   "direction": "long",
   "gridType": "arithmetic",
   "lowerPrice": 3960,
-  "upperPrice": 3360,
+  "upperPrice": 4360,
   "grids": 200,
   "quantityPerGrid": 10,
   "buyWorstPrice": 436000,
