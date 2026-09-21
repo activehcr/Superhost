@@ -1,0 +1,13 @@
+{
+  "marketIndex": 92,
+  "symbol": "XAU",
+  "direction": "long",
+  "gridType": "arithmetic",
+  "lowerPrice": 3960,
+  "upperPrice": 3360,
+  "grids": 200,
+  "quantityPerGrid": 10,
+  "buyWorstPrice": 436000,
+  "sellWorstPrice": 395000,
+  "priceLogSeconds": 1
+}
