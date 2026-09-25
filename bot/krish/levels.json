@@ -1,13 +1,13 @@
 {
-  "marketIndex": 2,
-  "symbol": "SOL",
+  "marketIndex": 92,
+  "symbol": "XAU",
   "direction": "long",
   "gridType": "arithmetic",
-  "lowerPrice": 60,
-  "upperPrice": 120,
-  "grids": 240,
+  "lowerPrice": 3800,
+  "upperPrice": 4400,
+  "grids": 200,
   "quantityPerGrid": 10,
-  "buyWorstPrice": 120000,
-  "sellWorstPrice": 55000,
+  "buyWorstPrice": 450000,
+  "sellWorstPrice": 380000,
   "priceLogSeconds": 1
 }
