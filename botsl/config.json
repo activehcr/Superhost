@@ -1,5 +1,5 @@
 {
-  "command": "run",
+  "command": "pause",
   "initialQuantity": 50,
   "trailingDistance": 0.50,
   "startDirection": "long",
