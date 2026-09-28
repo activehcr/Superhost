@@ -1,7 +1,7 @@
 {
   "command": "run",
   "initialQuantity": 50,
-  "trailingDistance": 1,
+  "trailingDistance": 0.3,
   "startDirection": "long",
   "marketIndex": 0,
   "symbol": "ETH"
