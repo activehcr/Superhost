@@ -11,10 +11,10 @@
   "sellWorstPrice": 85000,
   "priceLogSeconds": 1, 
 
-  "missedFillEnabled": false,
+  "missedFillEnabled": true,
   
-  "missedEntryFillOnResume": true,
-  "missedExitFillOnResume": true,
+  "missedEntryFillOnResume": false,
+  "missedExitFillOnResume": false,
   "missedEntryFillOnReconnect": true,
   "missedExitFillOnReconnect": true,
 
