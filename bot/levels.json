@@ -9,5 +9,16 @@
   "quantityPerGrid": 10,
   "buyWorstPrice": 120000,
   "sellWorstPrice": 85000,
-  "priceLogSeconds": 1
+  "priceLogSeconds": 1, 
+
+  "missedFillEnabled": false,
+  
+  "missedEntryFillOnResume": true,
+  "missedExitFillOnResume": true,
+  "missedEntryFillOnReconnect": true,
+  "missedExitFillOnReconnect": true,
+
+  "missedFillOnTimer": true,
+  "missedFillTimerSeconds": 1200,
+  "inRangeOnly": true
 }
