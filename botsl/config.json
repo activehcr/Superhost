@@ -1,5 +1,5 @@
 {
-  "command": "stop",
+  "command": "run",
   "initialQuantity": 10,
   "trailingDistance": 2,
   "startDirection": "long",
