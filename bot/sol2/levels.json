@@ -1,0 +1,24 @@
+{
+  "marketIndex": 2,
+  "symbol": "SOL",
+  "direction": "long",
+  "gridType": "arithmetic",
+  "lowerPrice": 88,
+  "upperPrice": 118,
+  "grids": 100,
+  "quantityPerGrid": 10,
+  "buyWorstPrice": 120000,
+  "sellWorstPrice": 85000,
+  "priceLogSeconds": 1,
+    
+  "missedFillEnabled": true,
+  
+  "missedEntryFillOnResume": true,
+  "missedExitFillOnResume": true,
+  "missedEntryFillOnReconnect": true,
+  "missedExitFillOnReconnect": true,
+  
+  "missedFillOnTimer": true,
+  "missedFillTimerSeconds": 1200,
+  "inRangeOnly": true
+}
